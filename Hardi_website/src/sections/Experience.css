@@ -1,0 +1,202 @@
+.exp-section {
+  padding: 7rem 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.exp-block {
+  margin-bottom: 4rem;
+}
+
+.section-label {
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--amethyst-smoke);
+}
+
+.section-label.sub {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--lilac), transparent);
+}
+
+.timeline__item {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--lilac);
+  box-shadow: 0 0 12px rgba(190, 149, 196, 0.6);
+}
+
+.timeline__dot.small {
+  width: 8px;
+  height: 8px;
+  top: 12px;
+}
+
+/* CARD */
+.timeline__card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  transition: 0.25s ease;
+}
+
+.timeline__card:hover {
+  border-color: var(--lilac);
+  transform: translateY(-2px);
+}
+
+.timeline__card.small {
+  padding: 1rem 1.2rem;
+}
+
+/* HEADER */
+.timeline__header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline__icon {
+  color: var(--lilac);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* TEXT */
+.timeline__period {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--amethyst-smoke);
+  margin-bottom: 0.3rem;
+}
+
+.timeline__role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.timeline__role.small-text {
+  font-size: 0.95rem;
+}
+
+.timeline__company {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.timeline__detail {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* POINTS */
+.timeline__points {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline__points li {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* TAGS */
+.timeline__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(190, 149, 196, 0.1);
+  color: var(--lilac);
+  border: 1px solid rgba(190, 149, 196, 0.2);
+}
+
+/* EDUCATION */
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.edu-card__header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.edu-card__icon {
+  color: var(--lilac);
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.edu-card__cgpa {
+  margin-left: auto;
+  text-align: right;
+}
+
+.edu-card__cgpa-val {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--lilac);
+}
+
+.edu-card__courses-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* CERT */
+.cert-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.cert-card__icon {
+  color: var(--lilac);
+  font-size: 1rem;
+}
