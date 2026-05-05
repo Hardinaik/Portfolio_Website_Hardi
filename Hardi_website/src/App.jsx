@@ -4,9 +4,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import Experience from './sections/Experience';
-import Skills from './sections/Skills';
+import Education from './sections/Education';
 import Projects from './sections/Projects';
+import Skills from './sections/Skills';
 import Achievements from './sections/Achievements';
+import PositionOfResponsibilities from './sections/Positions';
+import Certifications from './sections/Certifications';
 import Contact from './sections/Contact';
 
 export default function App() {
@@ -20,9 +23,12 @@ export default function App() {
       <main>
         <Hero />
         <Experience />
+        <Education />
+        <Projects />
         <Skills />
         <Achievements />
-        <Projects />
+        <PositionOfResponsibilities />
+        <Certifications />
         <Contact />
       </main>
 

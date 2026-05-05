@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { projects } from '../data';
+import { projects ,personalInfo} from '../data';
 import './Projects.css';
 
 const TYPE_COLORS = {
@@ -23,7 +23,7 @@ export default function Projects() {
             <div className="section-label">Selected Works</div>
             <h2 className="projects-title">Featured Projects</h2>
             <p className="projects-subtitle">
-              Systems built with focus on performance, scalability, and clean architecture.
+              Systems built with focus on performance, scalability and clean architecture.
             </p>
           </div>
           <a
@@ -32,7 +32,7 @@ export default function Projects() {
             rel="noreferrer"
             className="projects-github-link"
           >
-            View GitHub Archive ↗
+            View GitHub
           </a>
         </div>
 
