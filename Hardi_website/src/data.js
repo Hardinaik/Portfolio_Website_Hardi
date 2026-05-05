@@ -4,7 +4,7 @@ export const personalInfo = {
   title: "Upcoming Trainee Software Engineer",
   subtitle:
     "Final-year CS student at Dhirubhai Ambani University with a passion for Machine Learning, full-stack development, Generative AI and DSA problem solving. I love building things from LLM-powered applications to data-driven systems and I'm actively looking for opportunities to grow, contribute and make an impact as a fresher.",
-  email: "",
+  email: "naikhardi21@gmail.com",
   location: "Surat, Gujarat, India",
   available: true,
   links: {
@@ -17,7 +17,7 @@ export const personalInfo = {
 
 export const education = [
   {
-    degree: "B.Tech (Honours) in ICT",
+    degree: "B.Tech (Honours) in Information and Communication Technology",
     minor: "Minor in Computational Science",
     institution: "Dhirubhai Ambani University",
     location: "Gandhinagar, Gujarat",

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiSend, FiCheck, FiMail, FiMapPin, FiZap } from 'react-icons/fi';
 import { personalInfo } from '../data';
 import './Contact.css';
 
@@ -13,7 +14,9 @@ export default function Contact() {
   const handleSubmit = () => {
     if (!form.name || !form.email || !form.message) return;
     const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
+    const body    = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
+    );
     window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
     setSent(true);
     setForm({ name: '', email: '', message: '' });
@@ -24,17 +27,22 @@ export default function Contact() {
     <section id="contact" className="contact-section">
       <div className="container">
         <div className="contact-inner">
+
+          {/* ── Header — left aligned like all other sections ── */}
           <div className="contact-header">
-            <div className="section-label">Contact</div>
-            <h2 className="contact-title">Initiate a Connection</h2>
+            <div className="section-label">Get In Touch</div>
+            <h2 className="contact-title">Start a Conversation</h2>
             <p className="contact-sub">
-              Whether it's for technical collaboration or career discussions,
-              I'm always open to connecting.
+              I'm a fresher actively looking for opportunities — whether it's a full-time role,
+              internship or a project to collaborate on. Drop me a message and let's build
+              something together.
             </p>
           </div>
 
-          <div className="contact-form-wrap">
+          {/* ── Glass Card ── */}
+          <div className="contact-card">
             <div className="contact-form">
+
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Full Name</label>
@@ -44,7 +52,7 @@ export default function Contact() {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="your name"
                   />
                 </div>
                 <div className="form-group">
@@ -55,10 +63,11 @@ export default function Contact() {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="your@email.com"
+                    placeholder="name@example.com"
                   />
                 </div>
               </div>
+
               <div className="form-group">
                 <label className="form-label">Message</label>
                 <textarea
@@ -66,38 +75,65 @@ export default function Contact() {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="Your message here..."
+                  placeholder="Tell me about the opportunity, project idea or just say hi..."
                   rows={5}
                 />
               </div>
+
               <button
-                className={`form-submit ${sent ? 'form-submit--sent' : ''}`}
+                className={`form-submit${sent ? ' form-submit--sent' : ''}`}
                 onClick={handleSubmit}
               >
-                {sent ? ' Message Sent' : 'Send Message →'}
+                {sent
+                  ? <><FiCheck size={14} /> Message Sent</>
+                  : <><FiSend  size={14} /> Transmit Message</>
+                }
               </button>
-            </div>
 
-            {/* Direct contact info */}
-            <div className="contact-info">
-              <div className="contact-info__item">
-                <span className="contact-info__label">Email</span>
-                <a href={`mailto:${personalInfo.email}`} className="contact-info__val">
-                  {personalInfo.email}
-                </a>
-              </div>
-              <div className="contact-info__item">
-                <span className="contact-info__label">Location</span>
-                <span className="contact-info__val">{personalInfo.location}</span>
-              </div>
-              <div className="contact-info__item">
-                <span className="contact-info__label">Status</span>
-                <span className="contact-info__val contact-info__available">
-                  <span className="contact-info__dot" /> Available
-                </span>
-              </div>
             </div>
           </div>
+
+          {/* ── Info row ── */}
+          <div className="contact-info">
+            <div className="contact-info__item">
+              <span className="contact-info__label">Email</span>
+              <a href={`mailto:${personalInfo.email}`} className="contact-info__val">
+                <FiMail size={11} style={{ marginRight: '0.3rem', verticalAlign: 'middle' }} />
+                {personalInfo.email || 'hardinaik@email.com'}
+              </a>
+            </div>
+
+            <div className="contact-info__divider" />
+
+            <div className="contact-info__item">
+              <span className="contact-info__label">Location</span>
+              <span className="contact-info__val">
+                <FiMapPin size={11} style={{ marginRight: '0.3rem', verticalAlign: 'middle' }} />
+                {personalInfo.location}
+              </span>
+            </div>
+
+            <div className="contact-info__divider" />
+
+            <div className="contact-info__item">
+              <span className="contact-info__label">Status</span>
+              <span className="contact-info__val contact-info__available">
+                <span className="contact-info__dot" />
+                Open to Opportunities
+              </span>
+            </div>
+
+            <div className="contact-info__divider" />
+
+            <div className="contact-info__item">
+              <span className="contact-info__label">Looking For</span>
+              <span className="contact-info__val" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                <FiZap size={11} style={{ color: 'var(--accent)' }} />
+                Jobs &amp; Collaborations
+              </span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
