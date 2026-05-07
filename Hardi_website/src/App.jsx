@@ -22,8 +22,8 @@ export default function App() {
 
       <main>
         <Hero />
-        <Experience />
         <Education />
+        <Experience />
         <Skills />
         <Projects />
         <Achievements />

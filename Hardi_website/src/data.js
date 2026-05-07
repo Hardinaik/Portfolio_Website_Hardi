@@ -8,10 +8,11 @@ export const personalInfo = {
   location: "Surat, Gujarat, India",
   available: true,
   links: {
-    github: "",
-    leetcode: "",
-    codeforces: "",
-    linkedin: "",
+    github: "https://github.com/Hardinaik",
+    leetcode: "https://leetcode.com/u/naik05/",
+    codeforces: "https://codeforces.com/profile/Hardinaik",
+    linkedin: "https://www.linkedin.com/in/hardi-naik-76558b277/",
+    gfg:"https://www.geeksforgeeks.org/profile/naikhaqto2"
   },
 };
 
@@ -70,7 +71,7 @@ export const projects = [
     description:
       "Full-stack AI system for personalized job recommendations using hybrid semantic search and LLM-powered resume parsing.",
     longDescription:
-      "Built an end-to-end job recommendation platform using a hybrid search pipeline combining semantic vector embeddings (Google Gemini, 768-dim) and BM25 keyword ranking, fused via Reciprocal Rank Fusion (RRF) to deliver ranked job matches with 0–100 match scores.\n\nEngineered an LLM-driven resume parsing pipeline (LLaMA 3 8B via Groq) that extracts skills, work experience, and projects into separate vector embeddings stored in PostgreSQL with pgvector, enabling weighted cosine similarity matching across multiple resume dimensions.\n\nDeployed on Vercel (React frontend) and Render (FastAPI backend) with JWT role-based auth, automated SMTP email notifications, and dual recommendation modes (profile-based and manual).",
+      "Built an end-to-end job recommendation platform using a hybrid search pipeline combining semantic vector embeddings (Google Gemini, 768-dim) and BM25 keyword ranking, fused via Reciprocal Rank Fusion (RRF) to deliver ranked job matches with 0–100 match scores.\n\nEngineered an LLM-driven resume parsing pipeline (LLaMA 3 8B via Groq) that extracts skills, work experience and projects into separate vector embeddings stored in PostgreSQL with pgvector, enabling weighted cosine similarity matching across multiple resume dimensions.\n\nDeployed on Vercel (React frontend) and Render (FastAPI backend) with JWT role-based auth, automated SMTP email notifications and dual recommendation modes (profile-based and manual).",
     tags: ["Python", "FastAPI", "React", "PostgreSQL", "pgvector", "LangChain", "LLMs", "JWT"],
     highlight: "Hybrid semantic + BM25 search via RRF fusion",
     type: "Full Stack + AI",
@@ -83,14 +84,14 @@ export const projects = [
       "Designed a framework to automatically generate unit tests using LLMs with zero-shot and few-shot prompting techniques. Integrated Gemini API with LangChain to generate test cases.\n\nAchieved mutation scores of 91.27% (zero-shot) and 95.71% (few-shot), outperforming traditional tools like Pynguin (baseline 44–87%). Applied mutation testing using MuTAP to iteratively improve test quality and software reliability.",
     tags: ["Python", "LLM", "LangChain", "Gemini API", "MuTAP", "Pynguin"],
     highlight: "95.71% mutation score — beats Pynguin baseline",
-    type: "AI / Research",
+    type: "Testing + AI",
   },
   {
     title: "Airforce ERP System",
     description:
       "Normalized relational database system for managing military operations and logistics.",
     longDescription:
-      "Designed and developed a normalized relational database system to manage soldiers, aircraft, missions, and operational logistics. Constructed ER diagrams, normalized schemas, and wrote optimized SQL queries for high-volume data retrieval.",
+      "Designed and developed a normalized relational database system to manage soldiers, aircraft, missions and operational logistics. Constructed ER diagrams, normalized schemas and wrote optimized SQL queries for high-volume data retrieval.",
     tags: ["PostgreSQL", "SQL", "Database Design", "ER Diagrams"],
     highlight: "Normalized schema design for high-volume queries",
     type: "Database",
@@ -100,9 +101,9 @@ export const projects = [
     description:
       "Machine learning pipeline for regression with proper validation and preprocessing.",
     longDescription:
-      "Conducted comprehensive EDA and built leakage-free preprocessing pipelines using ColumnTransformer and Pipeline with proper train-test separation.\n\nEvaluated Linear, Ridge, Lasso, and Random Forest models with K-Fold Cross-Validation using RMSE and R² metrics.",
+      "Conducted comprehensive EDA and built leakage-free preprocessing pipelines using ColumnTransformer and Pipeline with proper train-test separation.\n\nEvaluated Linear, Ridge and Lasso models with K-Fold Cross-Validation using RMSE and R² metrics.",
     tags: ["Python", "scikit-learn", "Pandas", "NumPy", "ML"],
-    highlight: "K-Fold validation + leakage-free pipeline",
+    highlight: "K-Fold validation & leakage-free pipeline",
     type: "Machine Learning",
   },
 ];

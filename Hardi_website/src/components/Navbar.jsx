@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiArrowUpRight } from 'react-icons/fi';
 import './Navbar.css';
 
-const NAV_LINKS = ['About', 'Experience', 'Education', 'Skills', 'Projects', 'Contact'];
+const NAV_LINKS = ['About', 'Education','Experience', 'Skills', 'Projects', 'Contact'];
 
 export default function Navbar() {
   const [scrolled,  setScrolled]  = useState(false);
@@ -71,7 +71,7 @@ export default function Navbar() {
           {/* Resume inside mobile menu */}
           <li className="navbar__mobile-resume">
             <a
-              href="https://drive.google.com/your-resume-link"
+              href="https://drive.google.com/file/d/1b0ZruKoo7XaXsRImxHpfToYkvicg0smH/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="navbar__resume"
