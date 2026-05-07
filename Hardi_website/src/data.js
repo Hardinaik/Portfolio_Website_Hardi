@@ -156,4 +156,11 @@ export const certificates = [
     name: "Machine Learning Specialization",
     issuer: "Stanford University & DeepLearning.AI (Andrew Ng)",
   },
+   {
+    name: "Introduction to Generative AI",
+    issuer: "Google Cloud",
+  }
 ];
+
+export const resumeLink = "https://drive.google.com/file/d/1b0ZruKoo7XaXsRImxHpfToYkvicg0smH/view?usp=sharing";
+

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiArrowUpRight } from 'react-icons/fi';
 import './Navbar.css';
+import { resumeLink } from '../data';
+
 
 const NAV_LINKS = ['About', 'Education','Experience', 'Skills', 'Projects', 'Contact'];
 
@@ -71,7 +73,7 @@ export default function Navbar() {
           {/* Resume inside mobile menu */}
           <li className="navbar__mobile-resume">
             <a
-              href="https://drive.google.com/file/d/1b0ZruKoo7XaXsRImxHpfToYkvicg0smH/view?usp=sharing"
+              href={resumeLink}
               target="_blank"
               rel="noreferrer"
               className="navbar__resume"
@@ -85,7 +87,7 @@ export default function Navbar() {
 
         {/* Desktop Resume CTA */}
         <a
-          href="https://drive.google.com/your-resume-link"
+          href={resumeLink}
           target="_blank"
           rel="noreferrer"
           className="navbar__resume navbar__resume--desktop"
