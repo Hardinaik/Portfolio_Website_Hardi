@@ -516,6 +516,7 @@
 }
 
 /* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero__container {
     grid-template-columns: 1fr;
@@ -524,7 +525,24 @@
     padding-bottom: 2rem;
   }
 
-  .hero__avatar-wrap  { display: none; }
+  /* REMOVED: .hero__avatar-wrap { display: none; } */
+
+  .hero__avatar-wrap {
+    display: flex;
+    justify-content: center;
+    order: -1; /* shows photo ABOVE the text */
+  }
+
+  .hero__avatar-inner {
+    width: 150px;
+    height: 200px;
+  }
+
+  .hero__avatar-border-track {
+    width: 162px;
+    height: 212px;
+  }
+
   .hero__badge        { justify-content: center; }
   .hero__content      { max-width: 100%; }
   .hero__sub          { margin-left: auto; margin-right: auto; }
