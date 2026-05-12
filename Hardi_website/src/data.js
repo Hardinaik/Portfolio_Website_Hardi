@@ -38,7 +38,7 @@ export const education = [
 ];
 
 export const experience = [
-  {
+  /*{
     role: "Intern",
     company: "Prewish IT Solutions",
     period: "Jan 2026 – April 2026",
@@ -50,7 +50,7 @@ export const experience = [
       "Deployed a production full-stack application on Vercel (React frontend) and Render (FastAPI backend) with managed PostgreSQL + pgvector, featuring JWT role-based auth, automated SMTP email notifications, and dual recommendation modes.",
     ],
     tags: ["Python", "FastAPI", "React", "PostgreSQL", "pgvector", "LangChain", "LLMs", "Vercel", "Render"],
-  },
+  },*/
   {
     role: "Intern",
     company: "Synergy Peripheral Services",
@@ -62,7 +62,7 @@ export const experience = [
       "Built Python pipelines for data preprocessing, transformation and model evaluation, improving forecasting reliability.",
     ],
     tags: ["Python", "Time Series", "SARIMA", "Prophet", "Holt-Winters", "Forecasting"],
-  },
+  }
 ];
 
 export const projects = [
@@ -162,5 +162,4 @@ export const certificates = [
   }
 ];
 
-export const resumeLink = "https://drive.google.com/file/d/1b0ZruKoo7XaXsRImxHpfToYkvicg0smH/view?usp=sharing";
-
+export const resumeLink = "https://drive.google.com/file/d/1tcQG8EKTY4P2H8JGBDj_PO3bq-Gh7Xee/view?usp=sharing"
